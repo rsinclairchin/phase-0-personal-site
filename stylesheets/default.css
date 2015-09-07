@@ -4,19 +4,32 @@ nav>a {
   font-family: Verdana;
 }
 
-.container {
-  height: 1000px;
+nav {
+  position: fixed;
+}
+
+#container {
+  height: 100%;
   width: 100%;
 }
 
-footer {
+#main {
+  padding-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
   font-family: Verdana;
-  bottom: 5px;
+  height: 60px;
+  width: 100%;
 }
 
 body {
 background-image: url(file:///Users/Rosslyn/phase-0/rsinclairchin.github.io/home.jpg);
 background-repeat: no-repeat;
+padding: 10px;
+padding-bottom: 60px;
 }
 
 a:link {
