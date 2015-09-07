@@ -26,7 +26,7 @@ nav {
 }
 
 body {
-background-image: url(file:///Users/Rosslyn/phase-0/rsinclairchin.github.io/home.jpg);
+background-image: url(../home.jpg);
 background-repeat: no-repeat;
 padding: 10px;
 padding-bottom: 60px;
