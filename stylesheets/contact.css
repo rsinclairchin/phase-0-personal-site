@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana;
+}
+
+#main {
+  display: inline-block;
+  color: #E25190;
+  padding: 10%;
+  font-size: 2em;
+  position: absolute;
+  /*background-color: yellow;*/
+  width: 100%;
+}
+
+h1 {
+  padding-top: 5%;
+  font-size: 1em;
+}
+
+#main > a {
+  margin-right: 10%;
+  background-color: #e06c83;
+}
