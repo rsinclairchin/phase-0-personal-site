@@ -1,11 +1,14 @@
 nav>a {
   padding-right: 200px;
   padding-left: 200px;
-  font-family: Verdana;
 }
 
 nav {
   position: fixed;
+  background-color: #e06c83;
+  padding: .5%;
+  width: 100%;
+
 }
 
 #container {
@@ -26,25 +29,26 @@ nav {
 }
 
 body {
-background-image: url(../home.jpg);
-background-repeat: no-repeat;
-padding: 10px;
-padding-bottom: 60px;
+  background-image: url(../home.jpg);
+  background-repeat: no-repeat;
+  padding: 10px;
+  padding-bottom: 60px;
+  font-family: Verdana;
 }
 
 a:link {
   text-decoration: none;
-  color: pink;
+  color: #f5c74b;
 }
 
 a:visited {
   text-decoration: none;
-  color: purple;
+  color: #f5c74b;
 }
 
 a:hover {
   text-decoration: underline;
-  color: purple;
+  color: #f5c74b;
 }
 
 a:active {
