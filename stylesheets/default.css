@@ -1,14 +1,25 @@
-nav>a {
-  padding-right: 200px;
-  padding-left: 200px;
+#navbar>nav>ul {
+  list-style-type: none;
+}
+#navbar>nav>ul>li {
+  margin-top: 105%;
+  margin-bottom: 105%;
 }
 
-nav {
+#navbar {
   position: fixed;
-  background-color: #e06c83;
+  background-color: black;
+  width: 11%;
   padding: .5%;
-  width: 100%;
+  text-align: left;
+  border-radius: 0%;
+  float: left;
+  clear: both;
+}
 
+#content {
+  padding-left: 35%;
+  padding-top: 8%;
 }
 
 #container {
@@ -21,16 +32,17 @@ nav {
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   font-family: Verdana;
-  height: 60px;
+  height: 5%;
   width: 100%;
 }
 
 body {
-  background-image: url(../home.jpg);
+/*  background-image: url(../pink_tree.jpg);
   background-repeat: no-repeat;
+  background-size: contain;*/
   padding: 10px;
   padding-bottom: 60px;
   font-family: Verdana;
@@ -38,20 +50,20 @@ body {
 
 a:link {
   text-decoration: none;
-  color: #f5c74b;
+  color: white;
 }
 
 a:visited {
   text-decoration: none;
-  color: #f5c74b;
+  color: white;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #f5c74b;
+  color: #E25190;
 }
 
 a:active {
   text-decoration: none;
-  color: orange;
+  color: white;
 }

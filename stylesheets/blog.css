@@ -1,31 +1,19 @@
-h1 {
-  text-align: center;
-  font-family: Verdana;
-  color: #D67DB7;
-  text-decoration: underline;
-  font-size: 3em;
+#content {
+  width: 30%;
+  float: left;
+  clear: both;
 }
 
-body {
-background-color: #5E4063;
+#content>ul {
+  width: 75%;
+  text-align: left;
 }
 
-a:link {
-  text-decoration: none;
-  color: #D67DB7;
+#content>ul>li {
+  background-color: black;
+  list-style: none;
+  padding: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
-a:visited {
-  text-decoration: none;
-  color: #CA07AB;
-}
-
-a:active {
-  text-decoration: none;
-  color: orange;
-}
-
-h3 {
-  font-family: Verdana;
-  font-size: 1.5em;
-}
