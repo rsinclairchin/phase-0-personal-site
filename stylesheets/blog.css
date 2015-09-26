@@ -17,3 +17,16 @@
   margin-top: 5%;
 }
 
+/*post-specific*/
+
+#blogpost {
+margin-top: -20%;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+section {
+  width: 110%;
+}
