@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Roz has a blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
-</head>
-
-<main>
-  <h1>Enumerable Module</h1>
-  <h2>grep</h2>
-  <h4>Sunday PM, 20 Sept 2015</h4>
-
-  <section>
-    <p>
-      We often want to apply the same block of code onto a bunch of different objects. All the items in an array or hash, for example. This can be accomplished using loops, writing code that runs until it's touched every object it was supposed to touch. Enumerables allow us to iterate over collections of objects without having to write out lengthy and sometimes confusing loops.
-    </p>
-    <p>
-      The grep method iterates through a collection and picks out objects that meet a criterion. It returns them in an array. You can ask it to find all the Integers, or all the numbers within a specified range.
-    </p>
-    <p>
-      It can also be given a block of code to be used on all the objects it picks out! Very useful. It looks like this:
-    </p>
-    <p>collection.grep(thing_to_pick_out) {|obj| block}</p>
-    <p>I hear that grep loves regex, but I'm sure I don't know anything about that yet.</p>
-  </section>
-</main>
-</html>
+  <head>
+    <title>Roz has a blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content">
+      <div id="blogpost">
+        <h1>Enumerable Module</h1>
+        <h2>grep</h2>
+        <h4>Sunday PM, 20 Sept 2015</h4>
+        <section>
+          <p>
+            We often want to apply the same block of code onto a bunch of different objects. All the items in an array or hash, for example. This can be accomplished using loops, writing code that runs until it's touched every object it was supposed to touch. Enumerables allow us to iterate over collections of objects without having to write out lengthy and sometimes confusing loops.
+          </p>
+          <p>
+            The grep method iterates through a collection and picks out objects that meet a criterion. It returns them in an array. You can ask it to find all the Integers, or all the numbers within a specified range.
+          </p>
+          <p>
+            It can also be given a block of code to be used on all the objects it picks out! Very useful. It looks like this:
+          </p>
+          <p>collection.grep(thing_to_pick_out) {|obj| block}</p>
+          <p>I hear that grep loves regex, but I'm sure I don't know anything about that yet.</p>
+        </section>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>Rosslyn Sinclair-Chin</footer>
+    </div>
+    </div>
+  </body>
+  </html>
