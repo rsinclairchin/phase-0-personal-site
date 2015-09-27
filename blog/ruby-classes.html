@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roz has a blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content">
+      <div id="blogpost">
+        <h1>Ruby Classes</h1>
+        <h2>Build a Zombie Army</h2>
+        <h4>Sunday AM, 27 September 2015</h4>
+        <section>
+          <p>
+            Welcome to the wonderful lego world of programming! We can bulid anything with Ruby. Let's take over the world with a zombie army.
+          </p>
+          <p>
+            A class is a blueprint for an object. It's a startup pack that holds all the instruction to build an object and all the actions you call on it. We'll give it a name. Zombie is the obvious choice.
+          </p>
+          <xmp>
+            class Zombie
+
+            end
+          </xmp>
+          <p>
+            Super! Now we've got an empty Zombie class. It'd be great it if we could set it up with some basic, across-the-board zombie info. All of our default zombie setup goes inside of an initialize method.
+          </p>
+          <xmp>
+            class Zombie
+
+              def initialize
+                @@life_status = "Undead"
+                @@favourite_song = "Thriller"
+              end
+
+            end
+          </xmp>
+          <p>
+            Things that are true for every zombie everywhere get put into class variables. That's why they have the @@ at the start of their name. These are variables that are accessed in any part of the class, and are not changed between each instance of zombie. For things that are unique to each individual snowflake of a zombie, we use instance variables.
+          </p>
+          <xmp>
+            class Zombie
+
+              def initialize(name, decomposition_level)
+                @@life_status = "Undead"
+                @@favourite_song = "Thriller"
+                @name = name
+                @decomposition_level = decomposition_level
+              end
+
+            end
+          </xmp>
+          <p>
+            Cool, instance variables start with one @. Each zombie has it's own name, and it's own decomposition level. We need to give that information for every zombie we make. Now we can start building our army!
+          </p>
+          <xmp>
+            keanu = Zombie.new("Keanu Reeves", 40)
+            bill = Zombie.new("Bill Nye", 60)
+            carmen = Zombie.new("Carmen Miranda", 75)
+          </xmp>
+          <p>
+            Our army is starting to come together. Let's add some code to check the status of each of our zombies.
+          </p>
+          <xmp>
+            class Zombie
+              attr_accessor :name
+              attr_accessor :decomposition_level
+              attr_reader :life_status
+              attr_reader :favourite_song
+
+              def initialize(name, decomposition_level)
+                @@life_status = "Undead"
+                @@favourite_song = "Thriller"
+                @name = name
+                @decomposition_level = decomposition_level
+              end
+
+            end
+          </xmp>
+          <p>
+            attr_accessor lets us look up info on a zombie, and change it if we want to. attr_reader lets us look up info on a zombie, but won't let us change it. Remember what I said about class variables staying the same? That's why we used attr_reader and not attr_accessor.
+          </p>
+          <xmp>
+            keanu.name            #returns "Keanu Reeves"
+            bill.favourite_song   #returns "Thriller"
+          </xmp>
+          <p>
+            Looks pretty solid. But our zombies aren't doing anything. Let's get to taking over the world already! From here we can add any other methods to give our zombies some, uh, life.
+          </p>
+          <xmp>
+            class Zombie
+              attr_accessor :name
+              attr_accessor :decomposition_level
+              attr_reader :life_status
+              attr_reader :favourite_song
+
+              def initialize(name, decomposition_level)
+                @@life_status = "Undead"
+                @@favourite_song = "Thriller"
+                @name = name
+                @decomposition_level = decomposition_level
+              end
+
+              def eat(person)
+              end
+
+              def dance
+              end
+
+              def conquer(area)
+              end
+
+            end
+          </xmp>
+          <p>
+            Of course, these methods should be filled in. We can get to those another time, and add more if we want to! But here we have a fairly complete Zombie class, and we can use it to make as many zombies as our hearts desire. Aren't ruby classes wonderful?
+          </p>
+        </section>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>Rosslyn Sinclair-Chin</footer>
+    </div>
+    </div>
+  </body>
+  </html>
