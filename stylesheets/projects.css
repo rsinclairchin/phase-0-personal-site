@@ -2,6 +2,7 @@
   width: 30%;
   float: left;
   clear: both;
+  display: block;
 }
 
 #content>ul {
@@ -15,6 +16,11 @@
   padding: 5%;
   margin-bottom: 5%;
   margin-top: 5%;
+  float: left;
+  height: 200px;
+  width: 200px;
+  clear: both;
+  display: inline-block;
 }
 
 #content>h1 {
