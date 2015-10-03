@@ -5,19 +5,22 @@
 }
 
 #content>ul {
-  width: 90%;
-  text-align: left;
+  text-align: center;
   list-style-type: none;
+  margin-left: -10%;
 }
 
 #content>ul>li {
   background-color: black;
   float: left;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   margin:2%;
-  vertical-align: middle;
-  display: list-item;
+}
+
+#content>ul>li>a>img {
+  height: 120px;
+  width: 120px;
 }
 
 #content>h1 {
