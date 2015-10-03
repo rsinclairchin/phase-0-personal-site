@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roz has a blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content">
+        <h1>JavaScript and Ruby</h1>
+        <h2>The difference is in the details</h2>
+        <h4>Friday PM, 2 October 2015</h4>
+        <section>
+          <p>
+            JavaScript objects and Ruby hashes look nearly identical, and they used similarily as well. They both keep information organized in variable/value pairs. Take a look.
+          </p>
+          <p>JavaScript Object:</p>
+          <xmp>
+            var keanu = {
+              name: "Keanu Reeves",
+              age: 51,
+              }
+            </xmp>
+              <p>Ruby Hash:</p>
+              <xmp>
+              keanu = {
+              name: "Keanu Reeves"
+              age: 51
+            }
+          </xmp>
+          <p>
+            You can see how they might get mixed up. Although a Ruby hash is technically an object, and although a JavaScript object is technically a collection of data, I see the two quite differently. Here's how I look at it: A hash is a filing system, and an object is a thing that can be described. What I mean by that is that a hash keeps your data all tidied up and tucked away, and you can look up keanu's name or his age. Kind of like when we were kids and we were always worried about things being "put on our file". Every visit to the principal's office, every detention we had to attend. A hash is an information-keeper.
+          </p>
+          <p>
+            A JavaScript object is more like the actual thing itself. It's not keanu's file, it's actually keanu. Looking at a JavaScript object, you can say "Oh hey, I know that guy! His name is Keanu Reeves and he's 51 years old.". It has properties that describe it and you find out the values of the properties just by asking.
+          </p>
+          <p>
+            That's how I think about them. Maybe it's silly. Actual, real coding differences exist between them, too, though, beyond just what they're called. Looking up information in a Ruby hash is only ever done with bracket notation.
+          </p>
+          <xmp>
+            keanu[name]     #returns "Keanu Reeves"
+          </xmp>
+          <p>
+            Whereas Javascript can look up object properties with dot notation, or bracket notation (notice that the property needs to be passes as a string for this one).
+          </p>
+          <xmp>
+            keanu.name      #returns "Keanu Reeves"
+            keanu["name"]   #returns "Keanu Reeves"
+          </xmp>
+          <p>
+            There are also differences in how information can be added, deleted or modified in hashes or objects. Besides the syntactical differences between Ruby hashes and JavaScript, they are also interpretted differently. Objects are not always implemented as a simple dictionary structure. The way they are run under the hood can be quite different! I dipped my toe into those waters, but quickly realized that I had no chance of keeping afloat in there. Just understand that the computer treats them differently, and so should you.
+          </p>
+        </section>
+    </div>
+    <div id="footer">
+      <footer>Rosslyn Sinclair-Chin</footer>
+    </div>
+    </div>
+  </body>
+  </html>
