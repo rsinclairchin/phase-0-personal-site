@@ -7,7 +7,7 @@
 <body>
 
   <div class="ruby">
-    <img src="imgs/ruby.jpg">
+    <a href="http://ruby-doc.org/"><img src="imgs/ruby.jpg"></a>
   </div>
 
   <div class="methods">
@@ -15,19 +15,19 @@
   <ul>
     <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-reverse">#reverse</a></li>
     <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-shuffle">#shuffle</a></li>
-    <li>#rand</li>
-    <li>#split</li>
-    <li>#join</li>
-    <li>#length</li>
-    <li>#sort</li>
-    <li>#upcase</li>
-    <li>#downcase</li>
-    <li>#include?</li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/Random.html#method-i-rand">#rand</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/String.html#method-i-split">#split</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-join">#join</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-length">#length</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-sort">#sort</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.3/String.html#method-i-upcase">#upcase</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.3/String.html#method-i-downcase">#downcase</a></li>
+    <li><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-include-3F">#include?</a></li>
   </ul>
 </div>
 
 <div class="iterations">
-  <h2>Iterations[0] Iterations[1] Iterations[2]</h2>
+  <h2><a href="http://jeromedalbert.com/ruby-how-to-iterate-the-right-way/">Iterations[0] Iterations[1] Iterations[2]</a></h2>
   <p>Oftentimes, a problem will require all the elements inside of an array or hash to be accessed. Here are some methods to make looping easy!</p>
   <h3><a href="http://ruby-doc.org/core-2.2.0/Array.html#method-i-each">#each</a></h3>
   <p>Does what it says it does</p>
@@ -41,26 +41,39 @@
   <h2><a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm">Loops</a></h2>
   <ul>
     <li>for</li>
+    <xmp> for [variable] in [set] do
+   code things
+end</xmp>
     <li>while</li>
+    <xmp>while [conditional] do
+   code stuff
+end</xmp>
     <li>until</li>
+    <xmp>until [conditional] do
+   code magic
+end</xmp>
   </ul>
 </div>
 
 <div class="arrays">
   <h2><a href="http://rsinclairchin.github.io/blog/arrays-hashes.html">[Arrays] and {Hashes}</a></h2>
-  <p>Arrays store objects in a list. You can find a particular item in an array by asking for arr[index]</p>
-  <p>A hash is a collection of key/value pairs, quite like a dictionary!</p>
+  <p><a href="http://ruby-doc.org/core-2.2.0/Array.html">Arrays</a> store objects in a list. You can find a particular item in an array by asking for arr[index]</p>
+  <p>A <a href="http://ruby-doc.org/core-1.9.3/Hash.html">hash</a> is a list connecting keys with values, like a dictionary.</p>
 </div>
 
 <div class="create">
   <h2><a href="http://www.dev-hq.net/ruby/8--creating-methods">Create a Method</a></h2>
-  <p>For repeating blocks of code, consider creating a method. It's as easy as giving it a name, any arguments it might need to execute the code, and then the code block itself. Don't forget to start it with def and end it with end.</p>
+  <p>For repeating blocks of code, consider creating a method.</p>
+  <xmp> def new_method(args)
+    code do stuff
+  end
+</xmp>
 </div>
 
 <div class="classes">
   <h2><a href="http://rsinclairchin.github.io/blog/ruby-classes.html">Classes</a></h2>
-  <p>Classes group together attributes and methods relating to an object. It can be used to create new objects as instances of that class.</p>
-</div>
+  <p>Classes group together attributes and methods relating to an object. It can be used to create new objects as instances of that class. All the instances will have some things in common, they might all have a name or a height variable, or they might all want a method that deletes every other indexed value in an array, they'll all have the same basic structure. But the information provided when the object is initialized can vary.</p>
+  </div>
 
 </body>
 </html>

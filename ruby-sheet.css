@@ -1,8 +1,8 @@
 .ruby {
-  width: 20%;
+  width: 18%;
   display: inline-block;
   padding: 0 5% 5% 0;
-  border: 1px solid orange;
+  border: 1px dashed orange;
   margin-top: 15%;
   margin-left: 5%;
 }
@@ -34,20 +34,22 @@ li {
 .iterations {
   display: inline-block;
   float: right;
-  width: 33%;
+  width: 40%;
   top: 0px;
   border: 1px solid purple;
   margin-bottom: 0;
-  text-align: right;
+  text-align: center;
 }
 
-.iterations > h3 {
-  display: inline-block;
-  padding-left: 10%;
-  padding-right: 10%;
+.iterations > h2 {
+  text-align: center;
 }
 
 .iterations > p {
+  display: inline-block;
+}
+
+h3 {
   display: inline-block;
 }
 
@@ -55,13 +57,17 @@ li {
   display: inline-block;
   float: right;
   clear: both;
-  width: 25%;
+  width: 35%;
   border: 1px solid red;
-  margin-top: -20%;
+  margin-top: -25%;
 }
 
 .loops > h2 {
   text-align: center;
+}
+
+.loops > ul > li {
+  text-decoration: underline;
 }
 
 .arrays > h2 {
@@ -70,7 +76,7 @@ li {
 
 .arrays {
   display: inline-block;
-  width: 30%;
+  width: 28%;
   position: absolute;
   border: 1px solid blue;
   margin-left: -27%;
@@ -81,6 +87,9 @@ li {
   width: 30%;
   position: absolute;
   margin-top: -10%;
+}
+.create > h2 {
+  text-align: center;
 }
 
 .classes {
