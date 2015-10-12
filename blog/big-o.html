@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roz has a blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content">
+      <div id="blogpost">
+        <h1>Big O Complexity</h1>
+        <h2>How quickly do things slow down?</h2>
+        <h4>Saturday PM, 10 October 2015</h4>
+        <section>
+          <p>
+            Big O complexity considers how efficient a program when it's faced with larger and larger inputs. It can be helpful to compare different Big O complexities graphically, showing the complexity, or the number of operations it takes to come up with a solution, on the y-axis versus the size of the input on the x-axis.
+          </p>
+          <img src="../imgs/bigo.png" height="350px" width="500px">
+          <p>
+            There seems to be a few Big O complexities that are especially common. They are:
+          </p>
+          <ul>
+            <li>O(n) - Linear Complexity</li>
+            <li>O(n<sup>2</sup>) - Quadratic Complexity</li>
+            <li>O(log<sub>n</sub>) - Logarithmic Complexity</li>
+            <li>O(n!) - Factorial Complexity</li>
+            <li>O(n<sup>a</sup>) - Polynomial Complexity</li>
+          </ul>
+          <p>
+            I know they don't sound too friendly to anybody who isn't part mathematician, but they're actually not too bad if you look at them in the context of an example. No really, I swear.
+          </p>
+          <p>
+            First, consider a function that adds together all the elements in an array.
+            <xmp> def sum(arr)
+      total = 0
+      arr.each {|i| total += int}
+  end
+            </xmp>
+            The size of the array dictates how many operations it is going to take to come up with the solution (that's how many times it needs to loop through each before it gets to the end of the array). It's a one-to-one relationship. If there's only one item in the array, it will only have a complexity of one. Two items in the array, and it has a complexity of two. It has a complexity of O(n). If you refer back to the graph, O(n) is represented by the green line and it increases pretty steadily, in not-very-interesting increments.
+          </p>
+          <p>
+            Okay, now let's look at O(n<sup>2</sup>), quadratic complexity. This is going to be the dark teal line. You can see the complexity increases much more dramatically than O(n). Take a look at an example.
+          </p>
+          <xmp>
+  def all_combinations(the_list)
+    results = []
+    for item in the_list do
+      for inner_item in the_list do
+        results.push([item, inner_item])
+      end
+    end
+    return results
+  end
+          </xmp>
+          <p>
+            This returns every combination of pairs for a given list of numbers. For instance, if we give it [1,2,3], it will return [[1,1],[1,2],[1,3],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3]]. This is O(n<sup>2</sup>) because for every n items in the list the function require n<sup>2</sup> operations to complete the task. Larger inputs give the O(n<sup>2</sup>) much more work than they did in the function with O(n). Quadratic complexity seems to come up often for functions that involve nested loops.
+          </p>
+          <p>
+            Logarithmic complexity is where things start getting good. One way to get logarithmic complexity is to repeatedly divide by a constant. There is also such a thing as a binary search, which has logarithmic complexity. I found an example that involved a phone book, and I thought it was fantastic so I'm going to repeat it for you here. Say you wanted to ask a computer to look up a name for you in a phone book. Using a binary search, the computer would look up the name right in the middle of the phone book, and determine whether the name you're asking for comes before or after that name. Then it'll look up the name right in middle of either the half that came before or the half that came after, depending on where it determined the name would be. And it will continue to do this until it finds the name. That's called a binary search. In a phone book containing 3 names, it will take at most 2 comparisons. For 7 it will take at most 3. For 15 it takes 4. For 1,000,000 it takes 20. So that's what O(log<sub>n</sub>) looks like. It's the super chilled out brownish red line on the graph that's just too cool to freak out about larger inputs like the other lines. Pretty sweet.
+          </p>
+          <p>
+            There are a whole host of other Big O complexities, and some good people have written things that are really helpful in understanding them. I would highly recommend <a href="http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o">these</a> <a href="https://justin.abrah.ms/computer-science/big-o-notation-explained.html">two</a> in particular.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>Rosslyn Sinclair-Chin</footer>
+    </div>
+    </div>
+  </body>
+  </html>
